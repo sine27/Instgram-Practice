@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B0EEB31E7F1E3100D7E42D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEB21E7F1E3100D7E42D /* AppDelegate.swift */; };
+		25B0EEB81E7F1E3100D7E42D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEB61E7F1E3100D7E42D /* Main.storyboard */; };
+		25B0EEBA1E7F1E3100D7E42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEB91E7F1E3100D7E42D /* Assets.xcassets */; };
+		25B0EEBD1E7F1E3100D7E42D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEBB1E7F1E3100D7E42D /* LaunchScreen.storyboard */; };
+		25B0EEC81E7F1E3100D7E42D /* Instgram_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEC71E7F1E3100D7E42D /* Instgram_PracticeTests.swift */; };
+		25B0EED31E7F1E3100D7E42D /* Instgram_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EED21E7F1E3100D7E42D /* Instgram_PracticeUITests.swift */; };
+		25B0EEE11E7F1F5900D7E42D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEE01E7F1F5900D7E42D /* HomeViewController.swift */; };
+		25B0EEE31E7F1F7C00D7E42D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEE21E7F1F7C00D7E42D /* PostViewController.swift */; };
+		25B0EEE71E7F2B6E00D7E42D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEE61E7F2B6E00D7E42D /* UIHelper.swift */; };
+		25B0EEE91E7F307400D7E42D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEE81E7F307400D7E42D /* LoginViewController.swift */; };
+		25B0EEEB1E7F597100D7E42D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */; };
+		25B0EEEE1E7F5D8D00D7E42D /* InstgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */; };
+		25B0EEEF1E7F5D8D00D7E42D /* InstgramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */; };
+		25B0EEF11E7F5ECA00D7E42D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEF01E7F5ECA00D7E42D /* Post.swift */; };
+		694BED4A947ADF4706D15EC8 /* Pods_Instgram_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EAD4F3C8AB0C55DB6AFA2F /* Pods_Instgram_Practice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25B0EEC41E7F1E3100D7E42D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B0EEA71E7F1E3100D7E42D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B0EEAE1E7F1E3100D7E42D;
+			remoteInfo = "Instgram-Practice";
+		};
+		25B0EECF1E7F1E3100D7E42D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B0EEA71E7F1E3100D7E42D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B0EEAE1E7F1E3100D7E42D;
+			remoteInfo = "Instgram-Practice";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25B0EEAF1E7F1E3100D7E42D /* Instgram-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instgram-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B0EEB21E7F1E3100D7E42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25B0EEB71E7F1E3100D7E42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25B0EEB91E7F1E3100D7E42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25B0EEBC1E7F1E3100D7E42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25B0EEBE1E7F1E3100D7E42D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B0EEC31E7F1E3100D7E42D /* Instgram-PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instgram-PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B0EEC71E7F1E3100D7E42D /* Instgram_PracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_PracticeTests.swift; sourceTree = "<group>"; };
+		25B0EEC91E7F1E3100D7E42D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B0EECE1E7F1E3100D7E42D /* Instgram-PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instgram-PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B0EED21E7F1E3100D7E42D /* Instgram_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_PracticeUITests.swift; sourceTree = "<group>"; };
+		25B0EED41E7F1E3100D7E42D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B0EEE01E7F1F5900D7E42D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		25B0EEE21E7F1F7C00D7E42D /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		25B0EEE61E7F2B6E00D7E42D /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		25B0EEE81E7F307400D7E42D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstgramTableViewCell.swift; sourceTree = "<group>"; };
+		25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstgramTableViewCell.xib; sourceTree = "<group>"; };
+		25B0EEF01E7F5ECA00D7E42D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4A50C328F3829633F6C0C59C /* Pods-Instgram-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF7D50CAC30E36AC3383030 /* Pods-Instgram-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice.release.xcconfig"; sourceTree = "<group>"; };
+		C4EAD4F3C8AB0C55DB6AFA2F /* Pods_Instgram_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B0EEAC1E7F1E3100D7E42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694BED4A947ADF4706D15EC8 /* Pods_Instgram_Practice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EEC01E7F1E3100D7E42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EECB1E7F1E3100D7E42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B0EEA61E7F1E3100D7E42D = {
+			isa = PBXGroup;
+			children = (
+				25B0EEB11E7F1E3100D7E42D /* Instgram-Practice */,
+				25B0EEC61E7F1E3100D7E42D /* Instgram-PracticeTests */,
+				25B0EED11E7F1E3100D7E42D /* Instgram-PracticeUITests */,
+				25B0EEB01E7F1E3100D7E42D /* Products */,
+				CF095DFBC5C4C7EF7706F9F3 /* Pods */,
+				3F7F231265CF111A186636CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25B0EEB01E7F1E3100D7E42D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B0EEAF1E7F1E3100D7E42D /* Instgram-Practice.app */,
+				25B0EEC31E7F1E3100D7E42D /* Instgram-PracticeTests.xctest */,
+				25B0EECE1E7F1E3100D7E42D /* Instgram-PracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B0EEB11E7F1E3100D7E42D /* Instgram-Practice */ = {
+			isa = PBXGroup;
+			children = (
+				25B0EEB21E7F1E3100D7E42D /* AppDelegate.swift */,
+				25B0EEB61E7F1E3100D7E42D /* Main.storyboard */,
+				25B0EEB91E7F1E3100D7E42D /* Assets.xcassets */,
+				25B0EEBB1E7F1E3100D7E42D /* LaunchScreen.storyboard */,
+				25B0EEBE1E7F1E3100D7E42D /* Info.plist */,
+				25B0EEE01E7F1F5900D7E42D /* HomeViewController.swift */,
+				25B0EEE61E7F2B6E00D7E42D /* UIHelper.swift */,
+				25B0EEE21E7F1F7C00D7E42D /* PostViewController.swift */,
+				25B0EEE81E7F307400D7E42D /* LoginViewController.swift */,
+				25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */,
+				25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */,
+				25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */,
+				25B0EEF01E7F5ECA00D7E42D /* Post.swift */,
+			);
+			path = "Instgram-Practice";
+			sourceTree = "<group>";
+		};
+		25B0EEC61E7F1E3100D7E42D /* Instgram-PracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				25B0EEC71E7F1E3100D7E42D /* Instgram_PracticeTests.swift */,
+				25B0EEC91E7F1E3100D7E42D /* Info.plist */,
+			);
+			path = "Instgram-PracticeTests";
+			sourceTree = "<group>";
+		};
+		25B0EED11E7F1E3100D7E42D /* Instgram-PracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25B0EED21E7F1E3100D7E42D /* Instgram_PracticeUITests.swift */,
+				25B0EED41E7F1E3100D7E42D /* Info.plist */,
+			);
+			path = "Instgram-PracticeUITests";
+			sourceTree = "<group>";
+		};
+		3F7F231265CF111A186636CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAD4F3C8AB0C55DB6AFA2F /* Pods_Instgram_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF095DFBC5C4C7EF7706F9F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A50C328F3829633F6C0C59C /* Pods-Instgram-Practice.debug.xcconfig */,
+				6CF7D50CAC30E36AC3383030 /* Pods-Instgram-Practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25B0EEAE1E7F1E3100D7E42D /* Instgram-Practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B0EED71E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-Practice" */;
+			buildPhases = (
+				69D3346B9AAD20FFDB642BC6 /* [CP] Check Pods Manifest.lock */,
+				25B0EEAB1E7F1E3100D7E42D /* Sources */,
+				25B0EEAC1E7F1E3100D7E42D /* Frameworks */,
+				25B0EEAD1E7F1E3100D7E42D /* Resources */,
+				B62C789FCBA6D8A219A677BA /* [CP] Embed Pods Frameworks */,
+				CEA7EA91E709F56B5839E146 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Instgram-Practice";
+			productName = "Instgram-Practice";
+			productReference = 25B0EEAF1E7F1E3100D7E42D /* Instgram-Practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25B0EEC21E7F1E3100D7E42D /* Instgram-PracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B0EEDA1E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-PracticeTests" */;
+			buildPhases = (
+				25B0EEBF1E7F1E3100D7E42D /* Sources */,
+				25B0EEC01E7F1E3100D7E42D /* Frameworks */,
+				25B0EEC11E7F1E3100D7E42D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B0EEC51E7F1E3100D7E42D /* PBXTargetDependency */,
+			);
+			name = "Instgram-PracticeTests";
+			productName = "Instgram-PracticeTests";
+			productReference = 25B0EEC31E7F1E3100D7E42D /* Instgram-PracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25B0EECD1E7F1E3100D7E42D /* Instgram-PracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B0EEDD1E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-PracticeUITests" */;
+			buildPhases = (
+				25B0EECA1E7F1E3100D7E42D /* Sources */,
+				25B0EECB1E7F1E3100D7E42D /* Frameworks */,
+				25B0EECC1E7F1E3100D7E42D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B0EED01E7F1E3100D7E42D /* PBXTargetDependency */,
+			);
+			name = "Instgram-PracticeUITests";
+			productName = "Instgram-PracticeUITests";
+			productReference = 25B0EECE1E7F1E3100D7E42D /* Instgram-PracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25B0EEA71E7F1E3100D7E42D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shayin Feng";
+				TargetAttributes = {
+					25B0EEAE1E7F1E3100D7E42D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N33N8736G4;
+						ProvisioningStyle = Automatic;
+					};
+					25B0EEC21E7F1E3100D7E42D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N33N8736G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25B0EEAE1E7F1E3100D7E42D;
+					};
+					25B0EECD1E7F1E3100D7E42D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N33N8736G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25B0EEAE1E7F1E3100D7E42D;
+					};
+				};
+			};
+			buildConfigurationList = 25B0EEAA1E7F1E3100D7E42D /* Build configuration list for PBXProject "Instgram-Practice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25B0EEA61E7F1E3100D7E42D;
+			productRefGroup = 25B0EEB01E7F1E3100D7E42D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B0EEAE1E7F1E3100D7E42D /* Instgram-Practice */,
+				25B0EEC21E7F1E3100D7E42D /* Instgram-PracticeTests */,
+				25B0EECD1E7F1E3100D7E42D /* Instgram-PracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25B0EEAD1E7F1E3100D7E42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B0EEBD1E7F1E3100D7E42D /* LaunchScreen.storyboard in Resources */,
+				25B0EEBA1E7F1E3100D7E42D /* Assets.xcassets in Resources */,
+				25B0EEEF1E7F5D8D00D7E42D /* InstgramTableViewCell.xib in Resources */,
+				25B0EEB81E7F1E3100D7E42D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EEC11E7F1E3100D7E42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EECC1E7F1E3100D7E42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69D3346B9AAD20FFDB642BC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B62C789FCBA6D8A219A677BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA7EA91E709F56B5839E146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B0EEAB1E7F1E3100D7E42D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B0EEEB1E7F597100D7E42D /* ProfileViewController.swift in Sources */,
+				25B0EEE31E7F1F7C00D7E42D /* PostViewController.swift in Sources */,
+				25B0EEEE1E7F5D8D00D7E42D /* InstgramTableViewCell.swift in Sources */,
+				25B0EEF11E7F5ECA00D7E42D /* Post.swift in Sources */,
+				25B0EEB31E7F1E3100D7E42D /* AppDelegate.swift in Sources */,
+				25B0EEE71E7F2B6E00D7E42D /* UIHelper.swift in Sources */,
+				25B0EEE91E7F307400D7E42D /* LoginViewController.swift in Sources */,
+				25B0EEE11E7F1F5900D7E42D /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EEBF1E7F1E3100D7E42D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B0EEC81E7F1E3100D7E42D /* Instgram_PracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B0EECA1E7F1E3100D7E42D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B0EED31E7F1E3100D7E42D /* Instgram_PracticeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25B0EEC51E7F1E3100D7E42D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B0EEAE1E7F1E3100D7E42D /* Instgram-Practice */;
+			targetProxy = 25B0EEC41E7F1E3100D7E42D /* PBXContainerItemProxy */;
+		};
+		25B0EED01E7F1E3100D7E42D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B0EEAE1E7F1E3100D7E42D /* Instgram-Practice */;
+			targetProxy = 25B0EECF1E7F1E3100D7E42D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25B0EEB61E7F1E3100D7E42D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25B0EEB71E7F1E3100D7E42D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25B0EEBB1E7F1E3100D7E42D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25B0EEBC1E7F1E3100D7E42D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25B0EED51E7F1E3100D7E42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25B0EED61E7F1E3100D7E42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B0EED81E7F1E3100D7E42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A50C328F3829633F6C0C59C /* Pods-Instgram-Practice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-Practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		25B0EED91E7F1E3100D7E42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF7D50CAC30E36AC3383030 /* Pods-Instgram-Practice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-Practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		25B0EEDB1E7F1E3100D7E42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-PracticeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-PracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instgram-Practice.app/Instgram-Practice";
+			};
+			name = Debug;
+		};
+		25B0EEDC1E7F1E3100D7E42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-PracticeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-PracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instgram-Practice.app/Instgram-Practice";
+			};
+			name = Release;
+		};
+		25B0EEDE1E7F1E3100D7E42D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-PracticeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-PracticeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Instgram-Practice";
+			};
+			name = Debug;
+		};
+		25B0EEDF1E7F1E3100D7E42D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N33N8736G4;
+				INFOPLIST_FILE = "Instgram-PracticeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sine.Instgram-PracticeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Instgram-Practice";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25B0EEAA1E7F1E3100D7E42D /* Build configuration list for PBXProject "Instgram-Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B0EED51E7F1E3100D7E42D /* Debug */,
+				25B0EED61E7F1E3100D7E42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B0EED71E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B0EED81E7F1E3100D7E42D /* Debug */,
+				25B0EED91E7F1E3100D7E42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B0EEDA1E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-PracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B0EEDB1E7F1E3100D7E42D /* Debug */,
+				25B0EEDC1E7F1E3100D7E42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B0EEDD1E7F1E3100D7E42D /* Build configuration list for PBXNativeTarget "Instgram-PracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B0EEDE1E7F1E3100D7E42D /* Debug */,
+				25B0EEDF1E7F1E3100D7E42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25B0EEA71E7F1E3100D7E42D /* Project object */;
+}
