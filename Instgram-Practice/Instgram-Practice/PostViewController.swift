@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class PostViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class PostViewController: UIViewController {
     @IBOutlet weak var postButton: UIBarButtonItem!
     
     var tap = UITapGestureRecognizer()
+    
+    let helper = UIHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,36 @@ class PostViewController: UIViewController {
     
     @IBAction func postButtonTapped(_ sender: Any) {
         
+        view.endEditing(true)
+        
+        if postImageView.image == nil {
+            UIHelper.alertMessage("Post", userMessage: "Please choose an image.", action: nil, sender: self)
+        } else if postTextField.text == nil || postTextField.text == "" {
+            UIHelper.alertMessage("Post", userMessage: "Please fill the text field.", action: nil, sender: self)
+        } else {
+            postButton.isEnabled = false
+            DispatchQueue.global(qos: .userInitiated).async {
+                
+                let text = self.postTextField.text
+                Post.postUserImage(image: self.postImageView.image, withCaption: text, withCompletion: { (success, error) in
+                    self.helper.stopActivityIndicator()
+                    self.postButton.isEnabled = true
+                    if success {
+                        print("post success")
+                        self.postImageView.image = nil
+                        self.postTextField.text = ""
+                        self.tabBarController?.selectedIndex = 0
+                    } else {
+                        print(error?.localizedDescription ?? "")
+                        UIHelper.alertMessage("Post", userMessage: "Error: \(error?.localizedDescription ?? "Unkown Error")", action: nil, sender: self)
+                    }
+                })
+                
+                DispatchQueue.main.async {
+                    self.helper.activityIndicator(sender: self, style: .whiteLarge)
+                }
+            }
+        }
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
@@ -70,7 +103,7 @@ extension PostViewController: UIImagePickerControllerDelegate, UINavigationContr
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
         // Get the image captured by the UIImagePickerController
-        let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
         
         // Do something with the images (based on your use case)

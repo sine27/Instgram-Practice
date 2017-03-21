@@ -8,5 +8,6 @@ target 'Instgram-Practice' do
   # Pods for Instgram-Practice
 
   pod 'Parse'
+  pod 'ParseUI'
 
 end

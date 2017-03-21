@@ -166,6 +166,41 @@ extension UIImage {
 
 class UIHelper: NSObject {
     
+    var spinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.white)
+    var overlay = UIView()
+    
+    open func activityIndicator(sender : AnyObject, style: UIActivityIndicatorViewStyle) {
+        
+        overlay = UIView(frame: CGRect(x: 0, y: 0, width: sender.view.frame.width, height: sender.view.frame.height))
+        overlay.backgroundColor = UIColor.black
+        overlay.alpha = 0
+        
+        spinner = UIActivityIndicatorView(activityIndicatorStyle: style)
+        spinner.frame.size = CGSize(width: 60, height: 60)
+        spinner.center = overlay.center
+        spinner.isHidden = false
+        spinner.startAnimating()
+        spinner.alpha = 0
+        
+        sender.view.addSubview(overlay)
+        sender.view.addSubview(spinner)
+        
+        UIView.animate(withDuration: 0.6, animations: {
+            self.spinner.alpha = 1
+            self.overlay.alpha = 0.6
+        })
+    }
+    
+    open func stopActivityIndicator() {
+        spinner.stopAnimating()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.spinner.alpha = 0
+            self.overlay.alpha = 0
+        })
+        spinner.removeFromSuperview()
+        overlay.removeFromSuperview()
+    }
+    
     class func alertMessage(_ userTitle: String, userMessage: String, action: ((UIAlertAction) -> Void)?, sender: AnyObject)
     {
         let myAlert = UIAlertController(title: userTitle, message: userMessage, preferredStyle: UIAlertControllerStyle.alert)

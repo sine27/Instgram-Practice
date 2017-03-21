@@ -4,21 +4,83 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="199" id="KGk-i7-Jjw" customClass="InstgramTableViewCell" customModule="Instgram_Practice" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="389" id="KGk-i7-Jjw" customClass="InstgramTableViewCell" customModule="Instgram_Practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="389"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="198.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="388.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8o-DK-xnC">
+                        <rect key="frame" x="5" y="10" width="310" height="378.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZq-NX-s41" customClass="PFImageView">
+                                <rect key="frame" x="10" y="78.5" width="290" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KZq-NX-s41" secondAttribute="height" multiplier="1:1" id="Pfx-4z-2nY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnt-ih-FdN">
+                                <rect key="frame" x="10" y="10" width="290" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-mX-TBq">
+                                <rect key="frame" x="12" y="48" width="290" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="line-image" translatesAutoresizingMaskIntoConstraints="NO" id="EMm-cW-Vfl">
+                                <rect key="frame" x="0.0" y="33" width="310" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="NuV-L6-1aI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KZq-NX-s41" secondAttribute="trailing" constant="10" id="5La-JZ-tLP"/>
+                            <constraint firstItem="EMm-cW-Vfl" firstAttribute="leading" secondItem="g8o-DK-xnC" secondAttribute="leading" id="6Cu-8J-1x3"/>
+                            <constraint firstItem="KZq-NX-s41" firstAttribute="top" secondItem="0G6-mX-TBq" secondAttribute="bottom" constant="8" id="AL8-S2-Iol"/>
+                            <constraint firstAttribute="trailing" secondItem="Pnt-ih-FdN" secondAttribute="trailing" constant="10" id="AWU-Xf-mgE"/>
+                            <constraint firstItem="KZq-NX-s41" firstAttribute="leading" secondItem="g8o-DK-xnC" secondAttribute="leading" constant="10" id="BIn-HB-p7z"/>
+                            <constraint firstItem="0G6-mX-TBq" firstAttribute="leading" secondItem="g8o-DK-xnC" secondAttribute="leading" constant="10" id="H9z-np-Cr9"/>
+                            <constraint firstItem="EMm-cW-Vfl" firstAttribute="top" secondItem="Pnt-ih-FdN" secondAttribute="bottom" constant="2" id="JcH-ef-tF1"/>
+                            <constraint firstItem="Pnt-ih-FdN" firstAttribute="leading" secondItem="g8o-DK-xnC" secondAttribute="leading" constant="10" id="OZn-OX-b1l"/>
+                            <constraint firstAttribute="trailing" secondItem="EMm-cW-Vfl" secondAttribute="trailing" id="U0n-UC-rQq"/>
+                            <constraint firstItem="0G6-mX-TBq" firstAttribute="top" secondItem="EMm-cW-Vfl" secondAttribute="bottom" constant="5" id="Wk3-jj-A9a"/>
+                            <constraint firstAttribute="bottom" secondItem="KZq-NX-s41" secondAttribute="bottom" constant="10" id="Wu1-Xu-zbR"/>
+                            <constraint firstAttribute="trailing" secondItem="0G6-mX-TBq" secondAttribute="trailing" constant="10" id="lF4-8O-KFg"/>
+                            <constraint firstItem="Pnt-ih-FdN" firstAttribute="top" secondItem="g8o-DK-xnC" secondAttribute="top" constant="10" id="qEd-FK-THw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="g8o-DK-xnC" secondAttribute="trailing" constant="5" id="DRW-cz-NH7"/>
+                    <constraint firstItem="g8o-DK-xnC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bcU-HO-ouC"/>
+                    <constraint firstAttribute="bottom" secondItem="g8o-DK-xnC" secondAttribute="bottom" id="fUo-mg-25s"/>
+                    <constraint firstItem="g8o-DK-xnC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kpA-fY-cCe"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="43" y="228.5"/>
+            <connections>
+                <outlet property="cardView" destination="g8o-DK-xnC" id="7uI-Dg-Fzo"/>
+                <outlet property="contentLabel" destination="0G6-mX-TBq" id="TOh-He-b6p"/>
+                <outlet property="emailLabel" destination="Pnt-ih-FdN" id="yjE-ky-9Yb"/>
+                <outlet property="postImageView" destination="KZq-NX-s41" id="Y8d-fy-Cww"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="278.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="line-image" width="375" height="17"/>
+    </resources>
 </document>

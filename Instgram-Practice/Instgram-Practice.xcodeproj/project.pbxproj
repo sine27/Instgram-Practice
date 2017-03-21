@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25869F761E80C8D600274917 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25869F751E80C8D600274917 /* Post.swift */; };
 		25B0EEB31E7F1E3100D7E42D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEB21E7F1E3100D7E42D /* AppDelegate.swift */; };
 		25B0EEB81E7F1E3100D7E42D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEB61E7F1E3100D7E42D /* Main.storyboard */; };
 		25B0EEBA1E7F1E3100D7E42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEB91E7F1E3100D7E42D /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		25B0EEEB1E7F597100D7E42D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */; };
 		25B0EEEE1E7F5D8D00D7E42D /* InstgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */; };
 		25B0EEEF1E7F5D8D00D7E42D /* InstgramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */; };
-		25B0EEF11E7F5ECA00D7E42D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EEF01E7F5ECA00D7E42D /* Post.swift */; };
 		694BED4A947ADF4706D15EC8 /* Pods_Instgram_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EAD4F3C8AB0C55DB6AFA2F /* Pods_Instgram_Practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25869F751E80C8D600274917 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		25B0EEAF1E7F1E3100D7E42D /* Instgram-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instgram-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B0EEB21E7F1E3100D7E42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25B0EEB71E7F1E3100D7E42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstgramTableViewCell.swift; sourceTree = "<group>"; };
 		25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstgramTableViewCell.xib; sourceTree = "<group>"; };
-		25B0EEF01E7F5ECA00D7E42D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4A50C328F3829633F6C0C59C /* Pods-Instgram-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		6CF7D50CAC30E36AC3383030 /* Pods-Instgram-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instgram-Practice/Pods-Instgram-Practice.release.xcconfig"; sourceTree = "<group>"; };
 		C4EAD4F3C8AB0C55DB6AFA2F /* Pods_Instgram_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,12 +125,12 @@
 				25B0EEBE1E7F1E3100D7E42D /* Info.plist */,
 				25B0EEE01E7F1F5900D7E42D /* HomeViewController.swift */,
 				25B0EEE61E7F2B6E00D7E42D /* UIHelper.swift */,
+				25869F751E80C8D600274917 /* Post.swift */,
 				25B0EEE21E7F1F7C00D7E42D /* PostViewController.swift */,
 				25B0EEE81E7F307400D7E42D /* LoginViewController.swift */,
 				25B0EEEA1E7F597100D7E42D /* ProfileViewController.swift */,
 				25B0EEEC1E7F5D8D00D7E42D /* InstgramTableViewCell.swift */,
 				25B0EEED1E7F5D8D00D7E42D /* InstgramTableViewCell.xib */,
-				25B0EEF01E7F5ECA00D7E42D /* Post.swift */,
 			);
 			path = "Instgram-Practice";
 			sourceTree = "<group>";
@@ -362,10 +362,10 @@
 				25B0EEEB1E7F597100D7E42D /* ProfileViewController.swift in Sources */,
 				25B0EEE31E7F1F7C00D7E42D /* PostViewController.swift in Sources */,
 				25B0EEEE1E7F5D8D00D7E42D /* InstgramTableViewCell.swift in Sources */,
-				25B0EEF11E7F5ECA00D7E42D /* Post.swift in Sources */,
 				25B0EEB31E7F1E3100D7E42D /* AppDelegate.swift in Sources */,
 				25B0EEE71E7F2B6E00D7E42D /* UIHelper.swift in Sources */,
 				25B0EEE91E7F307400D7E42D /* LoginViewController.swift in Sources */,
+				25869F761E80C8D600274917 /* Post.swift in Sources */,
 				25B0EEE11E7F1F5900D7E42D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
